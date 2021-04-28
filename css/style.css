@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+}
+.banner_header{
+    background: url("https://storge.pic2.me/upload/120/5ec5489bdc67a.jpg") center / cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner_header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.4);
+    left: 0;
+    top: 0;
+}
+.banner_header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top , red transparnet);
+    left: 0;
+    bottom: 0;
+}
+.center_header{
+    width: 80%;
+    margin: auto;
+}
+.inline_header{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    position: relative;
+}
+.inline_header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+.inline_header ul{
+    list-style: none;
+    margin: 1;
+    padding-left: 0;
+    padding-top: 20px 0;
+
+}
+.left_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.left_list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.right_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.right_list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.logo li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+}
+.title{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    position: relative;
+}
+.title h1{
+    font-size: 50px;
+    color: white;
+}
+.title p{
+    color: white;
+    width: 600px;
+    font-size: 20px;
+}
+.links{
+    margin-top: 50px;
+}
+.links a{
+     color: black;
+     background-color: white;
+     padding: 20px 50px;
+     border-radius: 30px;
+     text-decoration: none;
+}
+.toggleicon li a i{
+    color: gold;
+    font-size: 20px;
+    display: none;
+}
+
+
+@media (max-width:697px){
+    .right_list{
+        display: none;
+    }
+    .right_list{
+        display: none;
+    }
+    .toggleicon li a i{
+        display: block;
+    }
+    .title p{
+        width: 100%;
+    }
+}
